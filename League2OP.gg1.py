@@ -23,7 +23,6 @@ for i in range (0,len(p)-1):
         elo2=elo1.find('div',class_="TierRank")
         elo3=elo1.find('span',class_="LeaguePoints")
         elo4=elo1.find('span',class_="winratio")
-        
     except:
         elo2 = ""
         elo3 = ""
