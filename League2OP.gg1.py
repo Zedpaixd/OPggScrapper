@@ -21,19 +21,14 @@ for i in range (0,len(p)-1):
 
     try:
         elo2=elo1.find('div',class_="TierRank")
+        elo3=elo1.find('span',class_="LeaguePoints")
+        elo4=elo1.find('span',class_="winratio")
+        
     except:
         elo2 = ""
-
-    try:
-        elo3=elo1.find('span',class_="LeaguePoints")
-    except:
         elo3 = ""
-    
-    try:
-        elo4=elo1.find('span',class_="winratio")
-    except:
         elo4 = ""
-
+        
     try:
         c=list(elo3)
     except:
@@ -46,15 +41,9 @@ for i in range (0,len(p)-1):
     except:
         print ("Does not exist.")
     
-    try:
-        print (''.join(c).strip())
-    except:
-        pass
-    
+    print (''.join(c).strip())
+
     try:
         print (list(elo4)[0].strip(),"\n")
     except:
         pass
-
-
-
