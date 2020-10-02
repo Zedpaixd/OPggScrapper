@@ -23,26 +23,33 @@ for i in range (0,len(p)-1):
         elo2=elo1.find('div',class_="TierRank")
         elo3=elo1.find('span',class_="LeaguePoints")
         elo4=elo1.find('span',class_="winratio")
+    
     except:
         elo2 = ""
         elo3 = ""
         elo4 = ""
-        
+    
+    
     try:
         c=list(elo3)
+   
     except:
         c=""
 
     print ("Player name:",p[i])
     
+    
     try:
         print ("Rank:",list(elo2)[0].strip())
+    
     except:
         print ("Does not exist.")
     
     print (''.join(c).strip())
 
+    
     try:
         print (list(elo4)[0].strip(),"\n")
+    
     except:
         pass
